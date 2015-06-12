@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+char letter1 = 'M';
+char letter2 = 'A';
+char letter3 = 'D';
+char letter4 = 'H';
+char letter5 = 'U';
+char letter6 = 'M';
+char letter7 = 'I';
+char letter8 = 'T';
+char letter9 = 'H';
+char letter10= 'A';
+
+int social = 12345;
+int date = 23;
+int month = 06;
+int year = 1987;
+
+int main ()
+{
+
+printf(" My name is %c%c%c%c%c%c%c%c%c%c\n", letter1, letter2, letter3, letter4, letter5, letter6, letter7, letter8, letter9, letter10);
+printf(" My social security number is %d\n", social);
+printf(" My date of birth is %d/%d/%d\n", date, month, year);
+return (0); 
+
+}
