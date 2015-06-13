@@ -1,0 +1,11 @@
+#include <stdio.h>
+float number=0;
+int num = 0;
+char a = 'c';
+int main()
+{
+printf("The number is %d\n", number);
+printf("The number is %f\n", num);
+printf("The character is  %d\n", a);
+return(0);
+}
