@@ -1,0 +1,13 @@
+#include <stdio.h>
+char line[100];
+float miles;
+float kilo;
+int main()
+{
+printf("Enter the kilometer per hour : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &kilo);
+miles = kilo * 0.6213712;
+printf("The converted value in miles per hour is %f\n", miles);
+return (0);
+}
