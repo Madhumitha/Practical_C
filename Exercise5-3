@@ -1,0 +1,14 @@
+#include <stdio.h>
+char line[100];
+int width;
+int height;
+int peri;
+int main()
+{
+printf("Enter the width and height of the rectangle : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d %d", &width, &height);
+peri = 2 * (width + height);
+printf("The perimeter of the rectangle is %d\n", peri);
+return (0);
+}
