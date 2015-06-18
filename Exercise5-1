@@ -1,0 +1,13 @@
+#include <stdio.h>
+char line[100]; //line of input data
+float cent; // Temperature in Celcius
+float fahr; // Temperature in Fahrenheit
+int main()
+{
+printf("Enter the Temperature in Celcius : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &cent);
+fahr= (9/5*cent)+ 32;
+printf("The temperature in Fahrenheit : %f\n", fahr);
+return (0);
+}
