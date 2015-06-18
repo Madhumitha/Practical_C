@@ -1,0 +1,14 @@
+#include <stdio.h>
+char line[100];
+int radius;
+float volume;
+const float PI=3.14;
+int main()
+{
+printf("Enter the radius of the sphere : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &radius);
+volume = (4/3)*PI*radius;
+printf("Volume of the sphere is %f\n", volume);
+return (0);
+}
