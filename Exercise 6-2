@@ -1,0 +1,31 @@
+#include<stdio.h>
+char grade;
+char line[80];
+float percentage;
+int main()
+{
+printf("Enter the percentage of the student:");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &percentage);
+if((percentage >= 0) && (percentage <= 60))
+{
+printf("The grade is F.\n");
+}
+else if ((percentage>=61) && (percentage <=70))
+{
+printf("The grade is D.\n");
+}
+else if ((percentage>=71) && (percentage <=80))
+{
+printf("The grade is C.\n");
+}
+else if ((percentage>=81) && (percentage <=90))
+{
+printf("The grade is B.\n");
+}
+else if((percentage >= 91) && (percentage <= 100))
+{
+printf("The grade is A.\n");
+}
+return (0);
+}
