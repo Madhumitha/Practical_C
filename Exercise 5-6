@@ -1,0 +1,15 @@
+#include <stdio.h>
+char line[100];
+int minutes;
+int hours;
+int rem_min;
+int main()
+{
+printf("Enter the total minutes : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, " %d", &minutes);
+hours = minutes / 60;
+rem_min= minutes % 60;
+printf("The total minutes is equal to %d hours and %d minutes.\n", hours, rem_min);
+return (0);
+}
