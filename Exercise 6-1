@@ -1,0 +1,21 @@
+#include <stdio.h>
+char line[100];
+int x1;
+int x2;
+int e1;
+int y2;
+float result;
+int main()
+{
+printf("Enter the coordinates of point1: ");
+fgets(line, sizeof(line), stdin);
+sscanf(line,"%d %d", &x1, &e1);
+printf("Enter the coordinates of point2: ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d %d", &x2, &y2);
+result = ((x2-x1)*(x2-x1)+(y2-e1)*(y2-e1));
+printf("The square of distance between two points is %f \n", result);
+return (0);
+}
+
+
