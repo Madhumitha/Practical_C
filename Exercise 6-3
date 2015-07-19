@@ -1,0 +1,63 @@
+#include<stdio.h>
+char grade;
+char line[80];
+float percentage;
+int main()
+{
+printf("Enter the percentage of the student:");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &percentage);
+if((percentage >= 0) && (percentage <= 60))
+{
+printf("The grade is F.\n");
+}
+else if((percentage>=60) && (percentage <=63))
+{
+printf("The grade is D-.\n");
+}
+else if ((percentage>=64) && (percentage <=67))
+{
+printf("The grade is D.\n");
+}
+else if((percentage>=68) && (percentage <=70))
+{
+printf("The grade is D+.\n");
+}
+else if((percentage>=70) && (percentage <=73))
+{
+printf("The grade is C-.\n");
+}
+else if ((percentage>=74) && (percentage <=77))
+{
+printf("The grade is C.\n");
+}
+else if((percentage>=78) && (percentage <=80))
+{
+printf("The grade is C+.\n");
+}
+else if((percentage>=81) && (percentage <=83))
+{
+printf("The grade is B-.\n");
+}
+else if ((percentage>=84) && (percentage <=87))
+{
+printf("The grade is B.\n");
+}
+else if((percentage>=88) && (percentage <=90))
+{
+printf("The grade is B+.\n");
+}
+else if((percentage>=91) && (percentage <=93))
+{
+printf("The grade is A-.\n");
+}
+else if((percentage >= 94) && (percentage <= 97))
+{
+printf("The grade is A.\n");
+}
+else if((percentage>=98) && (percentage <=100))
+{
+printf("The grade is A+.\n");
+}
+return (0);
+}
