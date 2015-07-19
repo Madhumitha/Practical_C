@@ -1,0 +1,22 @@
+#include <stdio.h>
+char line[50];
+float quarters;
+float dimes;
+float nickels;
+float pennies;
+int dollars; //dollars should be less than 1000
+int main()
+{
+printf("Enter the amount of money in dollars : ");
+fgets(line, sizeof(line),stdin);
+sscanf(line, "%d", &dollars);
+quarters = 4 * dollars;
+dimes = 10 * dollars;
+nickels = 20 * dollars;
+pennies = 100 * dollars;
+printf("The amount of money in %d dollars is %f quarters \n",dollars, quarters);
+printf("The amount of money in %d dollars is %f dimes \n", dollars,dimes);
+printf("The amount of money in %d dollars is %f nickels \n",dollars, nickels);
+printf("The amount of money in %d dollars is %f pennies \n",dollars, pennies);
+return (0);
+}
