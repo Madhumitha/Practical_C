@@ -1,0 +1,14 @@
+#include<stdio.h>
+char line[100];
+int hour;
+int minutes;
+int time;
+int main()
+{
+printf("Enter the minutes and hours : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d %d", &minutes, &hour);
+time = (hour *60) + minutes;
+printf(" Time in minutes is %d\n", time);
+return (0);
+}
