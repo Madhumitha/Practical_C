@@ -1,0 +1,26 @@
+#include <stdio.h>
+char line[100];
+int noh;
+int wage;
+float pay;
+float extra;
+int main() 
+{
+printf("Enter the number of hours an employee worked : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &noh);
+printf("Enter the hourly wage : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &wage);
+pay = (noh*wage);
+if(noh <= 40)
+{
+printf("The employee's weekly pay is %f", pay);
+}
+else 
+{
+extra = pay + ((noh-40)*(wage-10));
+printf("The employee's weekly pay is %f", extra);
+}
+return (0);
+}
