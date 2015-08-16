@@ -1,0 +1,38 @@
+/******************************************************************************************
+ * File name: ex7-6.c
+ * 
+ * Description: Program to check whether the number is prime or not
+ * 
+ * Version: 1.0
+ * Created: 16/07/2015 (dd/mm/yyyy)
+ * Revision: none
+ * Compiler: gcc
+ *
+ * Author: Madhumitha Prabakaran
+ *
+ *========================================================================================
+ */
+
+#include <stdio.h>
+char line[100];
+int prime;
+int flag,i;
+int main()
+{
+printf("Enter the number to check whether it is prime or not:");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &prime);
+for(i=2;i<=prime/2;++i)
+{
+if(prime%i==0)
+{
+flag=1;
+break;
+}
+}
+if(flag==0)
+printf("%d is the prime number.\n", prime);
+else
+printf("%d is not the prime number.\n",prime);
+return (0);
+}
