@@ -1,0 +1,33 @@
+/* Specifications 
+Conversions of English units to metric include converting miles to
+kilometers and gallons to liters.
+1 mile = 1.609 km
+1 gallon = 3.785 liters */
+
+/* Code Design 
+Uses no files and requires no fancy data structures 
+To design a major algorithm
+1) Read the miles and gallons entered by the user
+2) Do the calculation 
+3) Display the result */
+
+#include <stdio.h>
+float mile;
+float km;
+float gallon;
+float liters;
+char line[200];
+int main()
+{
+printf("Enter the mile : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &mile);
+printf("Enter the gallons : ");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &gallon);
+km = 1.609 * mile ;
+liters = 3.785 * gallon;
+printf("The %f mile is equal to %f km \n", mile, km);
+printf("The %f gallon is equal to %f liters \n", gallon, liters);
+return (0);
+}
