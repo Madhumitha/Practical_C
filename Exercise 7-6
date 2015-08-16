@@ -1,0 +1,47 @@
+/*************************************************************************
+ *
+ * Filename : ex7-6.c
+ * 
+ * Description : Counting of number of positive and negative values in a  
+                 series of numbers 
+ *
+ * Version : 1.0
+ * Revision : None
+ * Created  : 16/07/2015
+ * Compiler : gcc
+ *
+ * Author : Madhumitha Prabakaran
+ *
+ *==========================================================================
+ */
+
+#include <stdio.h>
+char line[100];
+int num[100];
+int i,a,b;
+int count;
+int main()
+{
+printf("Enter how many number you want to enter.\n");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &count);
+printf("Enter the numbers in sequence:\n");
+for(i=0;i<=(count-1);i++)
+{
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &num[i]);
+if(num[i]>=0)
+{
+a++;
+}
+else
+{
+b++;
+}
+}
+printf("The number of positive values are %d.\n",a);
+printf("The number of negative values are %d.\n",b);
+return (0);
+}
+
+
