@@ -1,0 +1,15 @@
+#include <stdio.h>
+char line[100];
+float sales_amount;
+float amount;
+float total;
+int main()
+{
+printf("Enter the amount in Rs.");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%f", &amount);
+sales_amount =((8*amount)/100);
+total = sales_amount+amount;
+printf("The total amount in Rs. %f\n",total);
+return (0);
+}
