@@ -1,0 +1,15 @@
+#include <stdio.h>
+char line[100];
+long int time;
+int size_mb;
+long int size;
+int main()
+{
+printf("Enter the size of the file in megabyte");
+fgets(line, sizeof(line), stdin);
+sscanf(line, "%d", &size_mb);
+size=size_mb*1000000;
+time=size/760;
+printf("The time taken to transmit a file in sec is %ld \n", time);
+return (0);
+}
